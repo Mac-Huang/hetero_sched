@@ -1,0 +1,10 @@
+{
+  "experiment_name": "test_dqn",
+  "agent_type": "DQN",
+  "total_episodes": 30,
+  "training_time_hours": 0.0015605902671813965,
+  "best_eval_reward": -79.1406782655246,
+  "final_avg_reward": -152.21951156176127,
+  "total_steps": 2717,
+  "convergence_episode": 15
+}

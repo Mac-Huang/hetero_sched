@@ -1,0 +1,10 @@
+{
+  "experiment_name": "test_ppo",
+  "agent_type": "PPO",
+  "total_episodes": 30,
+  "training_time_hours": 0.00631621585951911,
+  "best_eval_reward": -75.08157987559196,
+  "final_avg_reward": -353.7551996726381,
+  "total_steps": 6305,
+  "convergence_episode": 15
+}
