@@ -17,6 +17,13 @@ from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
 from enum import Enum
 import logging
+import sys
+import os
+
+# Add parent directory to import rewards module
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
+from rl.rewards.multi_objective import create_reward_function
+from rl.rewards.metrics import TaskResult
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -171,6 +178,20 @@ class HeteroSchedEnv(gym.Env):
         self.config = config or {}
         self.max_episode_steps = self.config.get('max_episode_steps', 1000)
         self.simulation_mode = self.config.get('simulation_mode', True)
+        
+        # Initialize multi-objective reward function
+        reward_strategy = self.config.get('reward_strategy', 'weighted_sum')
+        reward_weights = self.config.get('reward_weights', {
+            'latency': 0.3,
+            'energy': 0.2, 
+            'throughput': 0.25,
+            'fairness': 0.15,
+            'stability': 0.1
+        })
+        self.reward_function = create_reward_function(
+            strategy=reward_strategy,
+            weights=reward_weights
+        )
         
         # State space dimensions
         self.task_features_dim = 9
@@ -424,8 +445,9 @@ class HeteroSchedEnv(gym.Env):
     def _check_thermal_violation(self, device: Device, execution_time: float) -> bool:
         """Check if task execution would cause thermal violation"""
         temp = self.system_state.cpu_temperature if device == Device.CPU else self.system_state.gpu_temperature
-        temp_increase = execution_time * 2.0  # Simplified thermal model
-        return (temp + temp_increase) > 85.0  # 85°C threshold
+        temp_increase = min(5.0, execution_time * 0.5)  # More conservative thermal model
+        threshold = 90.0 if device == Device.GPU else 85.0  # Different thresholds for CPU/GPU
+        return (temp + temp_increase) > threshold
     
     def _check_slo_violation(self, task: Task, latency: float) -> bool:
         """Check if latency violates Service Level Objective"""
@@ -435,28 +457,39 @@ class HeteroSchedEnv(gym.Env):
         return False
     
     def _calculate_reward(self, task_result: Dict) -> float:
-        """Multi-objective reward function"""
-        # Normalized metrics (all scaled to similar ranges)
-        latency_reward = -np.log1p(task_result['total_latency']) / 10  # Negative log latency
-        energy_reward = -task_result['energy'] / 100  # Negative energy consumption
-        throughput_reward = task_result['throughput'] * 10  # Positive throughput
+        """Multi-objective reward function using sophisticated reward system"""
+        # Convert task result to TaskResult object
+        task_result_obj = TaskResult(
+            execution_time=task_result['execution_time'],
+            queue_wait=task_result['queue_wait'],
+            total_latency=task_result['total_latency'],
+            energy=task_result['energy'],
+            throughput=task_result['throughput'],
+            device=task_result['device'].name,
+            batch_size=task_result['batch_size'],
+            thermal_violation=task_result['thermal_violation'],
+            slo_violation=task_result['slo_violation'],
+            priority=task_result['priority'],
+            task_size=self.current_task.size,
+            task_type=self.current_task.task_type.name
+        )
         
-        # Penalty terms
-        thermal_penalty = -10.0 if task_result['thermal_violation'] else 0.0
-        slo_penalty = -20.0 if task_result['slo_violation'] else 0.0
+        # Convert system state to dict
+        system_state_dict = {
+            'cpu_temperature': self.system_state.cpu_temperature,
+            'gpu_temperature': self.system_state.gpu_temperature,
+            'gpu_memory_util': self.system_state.gpu_memory_used_mb / self.system_state.gpu_memory_total_mb,
+            'cpu_load': self.system_state.cpu_load_1min,
+            'gpu_utilization': self.system_state.gpu_utilization
+        }
         
-        # Fairness bonus (simplified)
-        fairness_bonus = 1.0 if task_result['priority'] >= 3 else 0.0
+        # Compute multi-objective reward
+        reward_result = self.reward_function.compute_reward(task_result_obj, system_state_dict)
         
-        # Weighted combination
-        reward = (0.4 * latency_reward +
-                 0.2 * energy_reward +
-                 0.3 * throughput_reward +
-                 0.1 * fairness_bonus +
-                 thermal_penalty +
-                 slo_penalty)
+        # Store detailed reward info for analysis
+        self.last_reward_info = reward_result
         
-        return reward
+        return reward_result['total_reward']
     
     def _update_system_state(self, task_result: Dict):
         """Update system state based on task execution"""
@@ -535,9 +568,9 @@ class HeteroSchedEnv(gym.Env):
             logger.warning("Terminating episode due to thermal runaway")
             return True
         
-        # Terminate if too many violations
+        # Terminate if too many violations (more lenient threshold)
         violation_rate = (self.metrics['thermal_violations'] + self.metrics['slo_violations']) / max(1, self.tasks_completed)
-        if violation_rate > 0.5:  # More than 50% violations
+        if violation_rate > 0.8 and self.tasks_completed > 10:  # More than 80% violations after 10 tasks
             logger.warning("Terminating episode due to high violation rate")
             return True
         
