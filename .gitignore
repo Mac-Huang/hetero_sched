@@ -1,0 +1,51 @@
+# Build artifacts
+build/
+*.o
+*.so
+*.a
+
+# Logs and data
+logs/*.csv
+logs/*.log
+*.log
+
+# ML models and checkpoints
+models/*.pkl
+models/*.h5
+models/*.pb
+rl_models/
+checkpoints/
+tensorboard_logs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Benchmark results (keep structure, ignore data)
+benchmark_results/*.csv
+benchmark_results/*.png
+benchmark_results/*.txt
+!benchmark_results/.gitkeep
