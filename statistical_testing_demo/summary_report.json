@@ -1,0 +1,208 @@
+{
+  "overview": {
+    "total_tests": 276,
+    "total_agents": 4,
+    "total_metrics": 3,
+    "test_types": [
+      "t_test",
+      "welch_t_test",
+      "mann_whitney",
+      "bootstrap_test",
+      "permutation_test",
+      "anova",
+      "kruskal_wallis"
+    ]
+  },
+  "significance_summary": {
+    "t_test": {
+      "total_tests": 54,
+      "significant_tests": 46,
+      "significance_rate": 0.8518518518518519
+    },
+    "welch_t_test": {
+      "total_tests": 54,
+      "significant_tests": 46,
+      "significance_rate": 0.8518518518518519
+    },
+    "mann_whitney": {
+      "total_tests": 54,
+      "significant_tests": 46,
+      "significance_rate": 0.8518518518518519
+    },
+    "bootstrap_test": {
+      "total_tests": 54,
+      "significant_tests": 46,
+      "significance_rate": 0.8518518518518519
+    },
+    "permutation_test": {
+      "total_tests": 54,
+      "significant_tests": 46,
+      "significance_rate": 0.8518518518518519
+    },
+    "anova": {
+      "total_tests": 3,
+      "significant_tests": 3,
+      "significance_rate": 1.0
+    },
+    "kruskal_wallis": {
+      "total_tests": 3,
+      "significant_tests": 3,
+      "significance_rate": 1.0
+    }
+  },
+  "effect_size_summary": {
+    "t_test": {
+      "mean_effect_size": 1.393618140278645,
+      "median_effect_size": 1.5257315388369768,
+      "large_effects": 42,
+      "medium_effects": 6,
+      "small_effects": 3,
+      "negligible_effects": 3
+    },
+    "welch_t_test": {
+      "mean_effect_size": 1.393618140278645,
+      "median_effect_size": 1.5257315388369768,
+      "large_effects": 42,
+      "medium_effects": 6,
+      "small_effects": 3,
+      "negligible_effects": 3
+    },
+    "mann_whitney": {
+      "mean_effect_size": 0.5306666666666667,
+      "median_effect_size": 0.7048000000000001,
+      "large_effects": 42,
+      "medium_effects": 3,
+      "small_effects": 3,
+      "negligible_effects": 6
+    },
+    "bootstrap_test": {
+      "mean_effect_size": 1.393618140278645,
+      "median_effect_size": 1.5257315388369768,
+      "large_effects": 42,
+      "medium_effects": 6,
+      "small_effects": 3,
+      "negligible_effects": 3
+    },
+    "permutation_test": {
+      "mean_effect_size": 1.393618140278645,
+      "median_effect_size": 1.5257315388369768,
+      "large_effects": 42,
+      "medium_effects": 6,
+      "small_effects": 3,
+      "negligible_effects": 3
+    },
+    "anova": {
+      "mean_effect_size": 0.5170453719560334,
+      "median_effect_size": 0.5166601071795388,
+      "large_effects": 3,
+      "medium_effects": 0,
+      "small_effects": 0,
+      "negligible_effects": 0
+    },
+    "kruskal_wallis": {
+      "mean_effect_size": 0.524981053914103,
+      "median_effect_size": 0.5469926896131587,
+      "large_effects": 3,
+      "medium_effects": 0,
+      "small_effects": 0,
+      "negligible_effects": 0
+    }
+  },
+  "metric_analysis": {
+    "total_reward": {
+      "total_tests": 92,
+      "test_types": [
+        "t_test",
+        "welch_t_test",
+        "mann_whitney",
+        "bootstrap_test",
+        "permutation_test",
+        "anova",
+        "kruskal_wallis"
+      ],
+      "overall_significance_rate": 0.8369565217391305
+    },
+    "task_completion_rate": {
+      "total_tests": 92,
+      "test_types": [
+        "t_test",
+        "welch_t_test",
+        "mann_whitney",
+        "bootstrap_test",
+        "permutation_test",
+        "anova",
+        "kruskal_wallis"
+      ],
+      "overall_significance_rate": 0.8369565217391305
+    },
+    "resource_utilization": {
+      "total_tests": 92,
+      "test_types": [
+        "t_test",
+        "welch_t_test",
+        "mann_whitney",
+        "bootstrap_test",
+        "permutation_test",
+        "anova",
+        "kruskal_wallis"
+      ],
+      "overall_significance_rate": 0.8913043478260869
+    }
+  },
+  "agent_performance_rankings": {
+    "total_reward": [
+      {
+        "agent": "AdaptiveScheduler",
+        "score": 1.0
+      },
+      {
+        "agent": "HeteroRL_v2.4",
+        "score": 0.3333333333333333
+      },
+      {
+        "agent": "BaselineScheduler",
+        "score": -0.3333333333333333
+      },
+      {
+        "agent": "SimpleScheduler",
+        "score": -1.0
+      }
+    ],
+    "task_completion_rate": [
+      {
+        "agent": "HeteroRL_v2.4",
+        "score": 1.0
+      },
+      {
+        "agent": "BaselineScheduler",
+        "score": 0.3333333333333333
+      },
+      {
+        "agent": "AdaptiveScheduler",
+        "score": -0.3333333333333333
+      },
+      {
+        "agent": "SimpleScheduler",
+        "score": -1.0
+      }
+    ],
+    "resource_utilization": [
+      {
+        "agent": "HeteroRL_v2.4",
+        "score": 1.0
+      },
+      {
+        "agent": "AdaptiveScheduler",
+        "score": 0.3333333333333333
+      },
+      {
+        "agent": "BaselineScheduler",
+        "score": -0.3333333333333333
+      },
+      {
+        "agent": "SimpleScheduler",
+        "score": -1.0
+      }
+    ]
+  }
+}
