@@ -1,0 +1,132 @@
+# Multi-Agent RL for Distributed Scheduling
+
+## Overview
+
+**Level:** Advanced  
+**Duration:** 150 minutes  
+**Prerequisites:** deep_rl_algorithms, Distributed systems
+
+Design and implement multi-agent systems for distributed scheduling
+
+## Learning Objectives
+
+By completing this module, you will be able to:
+- Hands On Implementation
+- Research Methods
+
+## Prerequisites Check
+
+Before starting this module, ensure you have:
+- [ ] deep_rl_algorithms
+- [ ] Distributed systems
+
+## Content Sections
+
+
+### 1. Multi-Agent RL Fundamentals
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 2. Coordination Mechanisms
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 3. Communication Protocols
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 4. Hierarchical Multi-Agent Systems
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 5. Scalability Considerations
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+## Hands-On Exercises
+
+Complete the following exercises to reinforce your learning:
+
+1. Implement independent learning agents
+2. Design communication protocol
+3. Compare centralized vs. decentralized approaches
+
+## Code Examples
+
+This module includes the following code examples:
+- `independent_learning_agents.py`: Independent multi-agent learning
+- `coordinated_multi_agent.py`: Coordinated multi-agent system
+- `hierarchical_scheduling.py`: Hierarchical multi-agent scheduling
+
+## Assessment
+
+Test your understanding with the quiz and practical assignments provided in the exercises section.
+
+## Next Steps
+
+After completing this module, you should:
+1. Review the key concepts covered
+2. Complete all exercises and verify your solutions
+3. Experiment with the provided code examples
+4. Proceed to the next module in your learning path
+
+## Additional Resources
+
+- Research papers on the topic
+- Online RL courses and tutorials  
+- Community forums and discussion groups
+- Implementation repositories and benchmarks
+
+---
+
+*This tutorial is part of the HeteroSched educational materials suite.*

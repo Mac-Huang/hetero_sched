@@ -1,0 +1,132 @@
+# MDP Formulation for Scheduling Problems
+
+## Overview
+
+**Level:** Intermediate  
+**Duration:** 120 minutes  
+**Prerequisites:** intro_rl_scheduling, Probability theory
+
+Learn to formulate scheduling problems as Markov Decision Processes
+
+## Learning Objectives
+
+By completing this module, you will be able to:
+- Understanding Concepts
+- Hands On Implementation
+
+## Prerequisites Check
+
+Before starting this module, ensure you have:
+- [ ] intro_rl_scheduling
+- [ ] Probability theory
+
+## Content Sections
+
+
+### 1. MDP Components: States, Actions, Rewards
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 2. State Space Design for Scheduling
+
+
+In this section, we focus on the practical aspects of problem formulation and system design.
+You'll learn systematic approaches to modeling real-world problems.
+
+Design considerations:
+- Problem decomposition strategies
+- State and action space modeling
+- Performance metrics and objectives
+- Implementation constraints
+
+**Hands-on Activity:** Complete the associated exercise to practice these design skills.
+
+### 3. Action Space Considerations
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 4. Reward Function Engineering
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 5. Transition Dynamics Modeling
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+## Hands-On Exercises
+
+Complete the following exercises to reinforce your learning:
+
+1. Formulate job scheduling as MDP
+2. Design state representation for cloud scheduling
+3. Implement reward function for multi-objective scheduling
+
+## Code Examples
+
+This module includes the following code examples:
+- `job_scheduling_mdp.py`: Complete job scheduling MDP formulation
+- `cloud_scheduling_formulation.py`: Cloud resource scheduling as MDP
+- `multi_objective_rewards.py`: Multi-objective reward function design
+
+## Assessment
+
+Test your understanding with the quiz and practical assignments provided in the exercises section.
+
+## Next Steps
+
+After completing this module, you should:
+1. Review the key concepts covered
+2. Complete all exercises and verify your solutions
+3. Experiment with the provided code examples
+4. Proceed to the next module in your learning path
+
+## Additional Resources
+
+- Research papers on the topic
+- Online RL courses and tutorials  
+- Community forums and discussion groups
+- Implementation repositories and benchmarks
+
+---
+
+*This tutorial is part of the HeteroSched educational materials suite.*

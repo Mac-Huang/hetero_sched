@@ -1,0 +1,133 @@
+# Deep RL Algorithms for Scheduling
+
+## Overview
+
+**Level:** Intermediate  
+**Duration:** 180 minutes  
+**Prerequisites:** mdp_formulation, Neural networks, PyTorch or TensorFlow
+
+Implement and compare deep RL algorithms for scheduling tasks
+
+## Learning Objectives
+
+By completing this module, you will be able to:
+- Hands On Implementation
+- Performance Analysis
+
+## Prerequisites Check
+
+Before starting this module, ensure you have:
+- [ ] mdp_formulation
+- [ ] Neural networks
+- [ ] PyTorch or TensorFlow
+
+## Content Sections
+
+
+### 1. DQN for Discrete Scheduling Decisions
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 2. Policy Gradient Methods
+
+
+This section covers algorithmic approaches and implementation details. We'll examine
+different methods, their strengths and weaknesses, and when to use each approach.
+
+Algorithm topics:
+- Core algorithmic principles
+- Implementation considerations  
+- Performance characteristics
+- Comparative analysis
+
+**Programming Exercise:** Implement the discussed algorithms using the provided templates.
+
+### 3. Actor-Critic Architectures
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 4. Continuous Control for Resource Allocation
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 5. Algorithm Selection Guidelines
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+## Hands-On Exercises
+
+Complete the following exercises to reinforce your learning:
+
+1. Implement DQN for job scheduling
+2. Train PPO agent for resource allocation
+3. Compare different RL algorithms on same problem
+
+## Code Examples
+
+This module includes the following code examples:
+- `dqn_job_scheduler.py`: DQN implementation for job scheduling
+- `ppo_resource_allocator.py`: PPO agent for resource allocation
+- `algorithm_comparison.py`: Comparison framework for RL algorithms
+
+## Assessment
+
+Test your understanding with the quiz and practical assignments provided in the exercises section.
+
+## Next Steps
+
+After completing this module, you should:
+1. Review the key concepts covered
+2. Complete all exercises and verify your solutions
+3. Experiment with the provided code examples
+4. Proceed to the next module in your learning path
+
+## Additional Resources
+
+- Research papers on the topic
+- Online RL courses and tutorials  
+- Community forums and discussion groups
+- Implementation repositories and benchmarks
+
+---
+
+*This tutorial is part of the HeteroSched educational materials suite.*

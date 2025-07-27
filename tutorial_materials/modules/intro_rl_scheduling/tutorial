@@ -1,0 +1,117 @@
+# Introduction to RL and Scheduling
+
+## Overview
+
+**Level:** Beginner  
+**Duration:** 90 minutes  
+**Prerequisites:** Basic programming knowledge, Linear algebra
+
+Introduction to reinforcement learning concepts and scheduling problems
+
+## Learning Objectives
+
+By completing this module, you will be able to:
+- Understanding Concepts
+
+## Prerequisites Check
+
+Before starting this module, ensure you have:
+- [ ] Basic programming knowledge
+- [ ] Linear algebra
+
+## Content Sections
+
+
+### 1. What is Reinforcement Learning?
+
+
+This section introduces the fundamental concepts and provides the necessary background
+for understanding the material. We'll cover key definitions, historical context,
+and practical motivations.
+
+Key points to remember:
+- Definitions of core concepts
+- Historical development and current state
+- Practical applications and use cases
+- Common challenges and limitations
+
+**Interactive Example:** Try the accompanying code example to see these concepts in action.
+
+### 2. Scheduling Problems Overview
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 3. Why RL for Scheduling?
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+### 4. Key Challenges and Opportunities
+
+
+This section explores advanced concepts and current research directions in the field.
+Understanding these topics will prepare you for cutting-edge applications.
+
+Advanced topics:
+- Recent research developments
+- Open challenges and opportunities
+- Future research directions
+- Practical deployment considerations
+
+**Research Activity:** Explore the latest papers and implementations in this area.
+
+## Hands-On Exercises
+
+Complete the following exercises to reinforce your learning:
+
+1. Identify RL components in a simple scheduling scenario
+2. Compare heuristic vs. RL approaches
+3. Design a basic reward function
+
+## Code Examples
+
+This module includes the following code examples:
+- `simple_mdp_example.py`: Basic MDP implementation for scheduling
+- `basic_scheduler_comparison.py`: Comparison of heuristic and RL schedulers
+
+## Assessment
+
+Test your understanding with the quiz and practical assignments provided in the exercises section.
+
+## Next Steps
+
+After completing this module, you should:
+1. Review the key concepts covered
+2. Complete all exercises and verify your solutions
+3. Experiment with the provided code examples
+4. Proceed to the next module in your learning path
+
+## Additional Resources
+
+- Research papers on the topic
+- Online RL courses and tutorials  
+- Community forums and discussion groups
+- Implementation repositories and benchmarks
+
+---
+
+*This tutorial is part of the HeteroSched educational materials suite.*

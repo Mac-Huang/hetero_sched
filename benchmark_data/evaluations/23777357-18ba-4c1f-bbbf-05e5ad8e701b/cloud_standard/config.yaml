@@ -1,0 +1,11 @@
+algorithm_name: SampleDeepRL
+algorithm_type: deep_rl
+authors:
+- John Doe
+category: hpc_scheduling
+description: Sample deep RL algorithm for demonstration
+institution: Example University
+main_class: SchedulingAlgorithm
+submitter_email: john.doe@example.com
+submitter_name: John Doe
+version: 1.0.0
